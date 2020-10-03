@@ -5,6 +5,10 @@
   "main": "index.js",
   "scripts": {
     "dev": "nodemon -L",
+    "build:dev": "NODE_ENV=dev webpack --config ./webpack/dev.config.js",
+    "build": "NODE_ENV=prod webpack --config ./webpack/prod.config.js",
+    "start:dev": "npm run build:dev && node dist/server.js",
+    "start": "npm run build && node dist/server.js",
     "lint": "eslint './src/**/*.{js,ts,jsx,tsx}'",
     "format": "eslint --fix './src/**/*.{js,ts,jsx,tsx}'"
   },
@@ -34,7 +38,12 @@
     "eslint-plugin-prettier": "^3.1.4",
     "nodemon": "^2.0.4",
     "prettier": "^2.1.2",
+    "ts-loader": "^8.0.4",
     "ts-node": "^9.0.0",
-    "typescript": "^4.0.3"
+    "typescript": "^4.0.3",
+    "webpack": "^4.44.2",
+    "webpack-cli": "^3.3.12",
+    "webpack-merge": "^5.1.4",
+    "webpack-node-externals": "^2.5.2"
   }
 }

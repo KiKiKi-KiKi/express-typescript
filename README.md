@@ -36,3 +36,16 @@ $ npm run dev
 $ npm run format
 ```
 
+## Build
+
+#### Build development mode
+
+```sh
+$ npm run build:dev
+```
+
+#### Build production mode
+
+```sh
+$ npm run build
+```
