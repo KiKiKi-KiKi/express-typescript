@@ -1,0 +1,25 @@
+{
+  "compilerOptions": {
+    "strict": true,
+    "module": "commonjs",
+    "target": "es2017",
+    "sourceMap": true,
+    "esModuleInterop": true,
+    "noImplicitAny": true,
+    "moduleResolution": "node",
+    "removeComments": true,
+    "forceConsistentCasingInFileNames": true,
+    "incremental": false,
+    "outDir": "dist",
+    "baseUrl": "src",
+    "paths": {
+      "*": [
+        "node_modules/*",
+        "src/types/*"
+      ]
+    },
+  },
+  "include": [
+    "src/**/*"
+  ]
+}
