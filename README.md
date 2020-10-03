@@ -29,3 +29,10 @@ $ npm install
 ```sh
 $ npm run dev
 ```
+
+### ESLint & Prettier
+
+```sh
+$ npm run format
+```
+
