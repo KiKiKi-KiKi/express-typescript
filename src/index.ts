@@ -7,7 +7,8 @@ const router = express.Router();
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 
-router.get('/',
+router.get(
+  '/',
   async (req: express.Request, res: express.Response): Promise<void> => {
     res.send('Hello TypeScript Express!');
   },
@@ -16,6 +17,8 @@ router.get('/',
 // Routing Middlewares
 app.use('/', router);
 
-app.listen(PORT, () => console.log(`listening on port http://localhost:${PORT}`));
+app.listen(PORT, () =>
+  console.log(`listening on port http://localhost:${PORT}`),
+);
 
 export default app;
